@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
@@ -9,31 +11,35 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="537.0" prefWidth="681.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.edu.ifro.MenuPrincipalController">
+<AnchorPane id="AnchorPane" prefHeight="537.0" prefWidth="681.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.MenuPrincipalController">
     <children>
       <ImageView fitHeight="544.0" fitWidth="688.0" layoutX="-6.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true" />
-        <Button fx:id="button" alignment="CENTER" layoutX="35.0" layoutY="49.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="102.0" text="Meus Favoritos" />
-        <Label fx:id="label" alignment="CENTER" contentDisplay="CENTER" minHeight="16" minWidth="69" prefHeight="54.0" prefWidth="681.0" text="Biblioteca Master" textAlignment="CENTER">
+      <ImageView fitHeight="537.0" fitWidth="688.0" layoutX="-3.0">
+         <image>
+            <Image url="@download.jpg" />
+         </image>
+      </ImageView>
+        <Button fx:id="button" alignment="CENTER" layoutX="35.0" layoutY="51.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="102.0" style="-fx-background-color: white; -fx-border-color: black;" text="Meus Favoritos" />
+        <Label fx:id="label" alignment="CENTER" contentDisplay="CENTER" minHeight="16" minWidth="69" prefHeight="54.0" prefWidth="681.0" text="Biblioteca Master" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font size="20.0" />
          </font></Label>
-      <Text layoutX="241.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seja Bem-Vindo Floriano;">
+      <Text fill="WHITE" layoutX="241.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seja Bem-Vindo Floriano;">
          <font>
             <Font size="18.0" />
          </font>
       </Text>
-      <Button fx:id="button1" layoutX="35.0" layoutY="132.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="102.0" text="Reservas" />
-      <Button fx:id="button11" layoutX="35.0" layoutY="227.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="102.0" text="Históricos" />
-      <Button fx:id="button111" layoutX="33.0" layoutY="321.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="102.0" text="Mais Lidos" />
-      <Button fx:id="button1111" layoutX="35.0" layoutY="412.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="102.0" text="Emprestimo" />
-      <ComboBox layoutX="191.0" layoutY="132.0" prefHeight="25.0" prefWidth="200.0" promptText="Sidney Sheldon" />
-      <Button fx:id="button12" layoutX="400.0" layoutY="132.0" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="102.0" text="Buscar" />
-      <Button fx:id="button112" layoutX="536.0" layoutY="445.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="102.0" text="Salvar">
+      <Button fx:id="button1" layoutX="35.0" layoutY="132.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="102.0" style="-fx-background-color: white; -fx-border-color: black;" text="Reservas" />
+      <Button fx:id="button11" layoutX="35.0" layoutY="227.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="102.0" style="-fx-background-color: white; -fx-border-color: black;" text="Históricos" />
+      <Button fx:id="button111" layoutX="33.0" layoutY="321.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="102.0" style="-fx-background-color: white; -fx-border-color: black;" text="Mais Lidos" />
+      <Button fx:id="button1111" layoutX="35.0" layoutY="412.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="102.0" style="-fx-background-color: white; -fx-border-color: black;" text="Emprestimo" />
+      <Button fx:id="button12" layoutX="400.0" layoutY="130.0" onAction="#handleButtonAction" prefHeight="27.0" prefWidth="102.0" style="-fx-background-color: white; -fx-border-color: black;" text="Buscar" />
+      <Button fx:id="button112" layoutX="536.0" layoutY="445.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="102.0" style="-fx-background-color: white; -fx-border-color: black;" text="Salvar">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button fx:id="button113" layoutX="411.0" layoutY="445.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="102.0" text="Fechar">
+      <Button fx:id="button113" layoutX="411.0" layoutY="445.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="102.0" style="-fx-background-color: white; -fx-border-color: black;" text="Fechar">
          <font>
             <Font size="18.0" />
          </font>
@@ -50,10 +56,11 @@
             <TreeTableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
       </TreeTableView>
-      <Box layoutX="630.0" layoutY="49.0" />
-      <ImageView fitHeight="45.0" fitWidth="146.0" layoutX="616.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+      <JFXPasswordField layoutX="68.0" layoutY="15.0" />
+      <JFXComboBox focusColor="BLACK" layoutX="193.0" layoutY="131.0" prefHeight="27.0" prefWidth="200.0" promptText="Sidney Sheldon" style="-fx-background-color: white; -fx-border-color: black;" unFocusColor="#ffffff00" />
+      <ImageView layoutX="638.0" layoutY="10.0">
          <image>
-            <Image url="@../../../../../../../../Pictures/Capturar.PNG" />
+            <Image url="@caratinha.jpg" />
          </image>
       </ImageView>
     </children>
