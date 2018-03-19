@@ -9,8 +9,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="492.0" prefWidth="702.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.edu.ifro.HistoricoController">
+<AnchorPane id="AnchorPane" prefHeight="492.0" prefWidth="702.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.HistoricoController">
    <children>
       <ImageView fitHeight="492.0" fitWidth="702.0">
          <image>
@@ -30,5 +29,15 @@
             <TreeTableColumn prefWidth="135.0" text="Status" />
         </columns>
       </TreeTableView>
+      <JFXButton layoutX="579.0" layoutY="432.0" prefHeight="38.0" prefWidth="98.0" style="-fx-background-color: White; -fx-border-color: black;" text="Fechar">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="460.0" layoutY="432.0" prefHeight="38.0" prefWidth="98.0" style="-fx-background-color: White; -fx-border-color: black;" text="Atualizar">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
    </children>
 </AnchorPane>
