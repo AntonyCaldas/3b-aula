@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import com.jfoenix.controls.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
@@ -8,19 +9,35 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="492.0" prefWidth="772.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.edu.ifro.MaisLidosController">
+<AnchorPane id="AnchorPane" prefHeight="492.0" prefWidth="772.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.MaisLidosController">
    <children>
-      <Label alignment="CENTER" layoutY="-3.0" prefHeight="56.0" prefWidth="772.0" text="Mais Lidos" textAlignment="CENTER">
+      <ImageView fitHeight="492.0" fitWidth="772.0">
+         <image>
+            <Image url="@download.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutY="-3.0" prefHeight="56.0" prefWidth="772.0" text="Mais Lidos" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Button layoutX="641.0" layoutY="419.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="101.0" text="Fechar">
+      <TreeTableView layoutX="94.0" layoutY="91.0" prefHeight="287.0" prefWidth="585.0">
+        <columns>
+          <TreeTableColumn prefWidth="142.0" text="Do Dia" />
+          <TreeTableColumn prefWidth="147.0" text="Da Semana" />
+            <TreeTableColumn prefWidth="153.0" text="Do Mês" />
+            <TreeTableColumn prefWidth="142.0" text="Do Ano" />
+        </columns>
+      </TreeTableView>
+      <JFXButton layoutX="508.0" layoutY="420.0" prefHeight="44.0" prefWidth="101.0" style="-fx-background-color: white; -fx-border-color: black;" text="Atualizar">
          <font>
-            <Font size="18.0" />
+            <Font size="16.0" />
          </font>
-      </Button>
-      <JFXButton layoutX="139.0" layoutY="148.0" />
+      </JFXButton>
+      <JFXButton layoutX="638.0" layoutY="420.0" prefHeight="44.0" prefWidth="101.0" style="-fx-background-color: white; -fx-border-color: black;" text="Fechar">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
    </children>
 </AnchorPane>
