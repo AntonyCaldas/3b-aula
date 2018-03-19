@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.paint.*?>
 <?import com.jfoenix.controls.*?>
 <?import javafx.scene.image.*?>
-<?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -11,57 +9,64 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="537.0" prefWidth="681.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.MenuPrincipalController">
-    <children>
-      <ImageView fitHeight="544.0" fitWidth="688.0" layoutX="-6.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="537.0" fitWidth="688.0" layoutX="-3.0">
+<AnchorPane id="AnchorPane" prefHeight="462.0" prefWidth="734.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.MenuPrincipalController">
+   <children>
+      <ImageView fitHeight="556.0" fitWidth="817.0">
          <image>
             <Image url="@download.jpg" />
          </image>
       </ImageView>
-        <Button fx:id="button" alignment="CENTER" layoutX="35.0" layoutY="51.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="102.0" style="-fx-background-color: white; -fx-border-color: black;" text="Meus Favoritos" />
-        <Label fx:id="label" alignment="CENTER" contentDisplay="CENTER" minHeight="16" minWidth="69" prefHeight="54.0" prefWidth="681.0" text="Biblioteca Master" textAlignment="CENTER" textFill="WHITE">
+      <Label alignment="CENTER" layoutX="322.0" layoutY="20.0" prefHeight="32.0" prefWidth="173.0" text="Biblioteca Master" textFill="WHITE">
          <font>
             <Font size="20.0" />
-         </font></Label>
-      <Text fill="WHITE" layoutX="241.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seja Bem-Vindo Floriano;">
-         <font>
-            <Font size="18.0" />
          </font>
-      </Text>
-      <Button fx:id="button1" layoutX="35.0" layoutY="132.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="102.0" style="-fx-background-color: white; -fx-border-color: black;" text="Reservas" />
-      <Button fx:id="button11" layoutX="35.0" layoutY="227.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="102.0" style="-fx-background-color: white; -fx-border-color: black;" text="Históricos" />
-      <Button fx:id="button111" layoutX="33.0" layoutY="321.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="102.0" style="-fx-background-color: white; -fx-border-color: black;" text="Mais Lidos" />
-      <Button fx:id="button1111" layoutX="35.0" layoutY="412.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="102.0" style="-fx-background-color: white; -fx-border-color: black;" text="Emprestimo" />
-      <Button fx:id="button12" layoutX="400.0" layoutY="130.0" onAction="#handleButtonAction" prefHeight="27.0" prefWidth="102.0" style="-fx-background-color: white; -fx-border-color: black;" text="Buscar" />
-      <Button fx:id="button112" layoutX="536.0" layoutY="445.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="102.0" style="-fx-background-color: white; -fx-border-color: black;" text="Salvar">
+      </Label>
+      <Label alignment="CENTER" layoutX="289.0" layoutY="65.0" prefHeight="32.0" prefWidth="239.0" text="Seja-Bem Vindo Sebastião" textFill="WHITE">
          <font>
-            <Font size="18.0" />
+            <Font size="20.0" />
          </font>
-      </Button>
-      <Button fx:id="button113" layoutX="411.0" layoutY="445.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="102.0" style="-fx-background-color: white; -fx-border-color: black;" text="Fechar">
+      </Label>
+      <JFXButton layoutX="14.0" layoutY="60.0" prefHeight="43.0" prefWidth="108.0" style="-fx-background-color: white; -fx-border-color: black;" text="Meus Favoritos">
          <font>
-            <Font size="18.0" />
+            <Font size="13.0" />
          </font>
-      </Button>
-      <Line endX="100.0" startX="-100.0" />
-      <MeshView />
-      <TreeTableView layoutX="193.0" layoutY="212.0" prefHeight="200.0" prefWidth="320.0">
+      </JFXButton>
+      <JFXButton layoutX="14.0" layoutY="147.0" prefHeight="43.0" prefWidth="108.0" style="-fx-background-color: white; -fx-border-color: black;" text="Reservas">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="14.0" layoutY="246.0" prefHeight="43.0" prefWidth="108.0" style="-fx-background-color: white; -fx-border-color: black;" text="Históricos">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="14.0" layoutY="343.0" prefHeight="43.0" prefWidth="108.0" style="-fx-background-color: white; -fx-border-color: black;" text="Mais Lidos">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="14.0" layoutY="435.0" prefHeight="43.0" prefWidth="108.0" style="-fx-background-color: white; -fx-border-color: black;" text="Emprestimos">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <TreeTableView layoutX="221.0" layoutY="171.0" prefHeight="236.0" prefWidth="463.0">
         <columns>
-          <TreeTableColumn prefWidth="75.0" text="Titulos" />
-          <TreeTableColumn prefWidth="75.0" text="Disponibilidade" />
-            <TreeTableColumn prefWidth="75.0" text="Autor" />
+          <TreeTableColumn prefWidth="148.0" text="Títulos" />
+          <TreeTableColumn minWidth="0.0" prefWidth="160.0" text="Autor" />
+            <TreeTableColumn prefWidth="154.0" text="Disponibilidade" />
         </columns>
-         <columnResizePolicy>
-            <TreeTableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
-         </columnResizePolicy>
       </TreeTableView>
-      <JFXPasswordField layoutX="68.0" layoutY="15.0" />
-      <JFXComboBox focusColor="BLACK" layoutX="193.0" layoutY="131.0" prefHeight="27.0" prefWidth="200.0" promptText="Sidney Sheldon" style="-fx-background-color: white; -fx-border-color: black;" unFocusColor="#ffffff00" />
-      <ImageView layoutX="638.0" layoutY="10.0">
-         <image>
-            <Image url="@caratinha.jpg" />
-         </image>
-      </ImageView>
-    </children>
+      <JFXButton layoutX="695.0" layoutY="414.0" prefHeight="43.0" prefWidth="108.0" style="-fx-background-color: white; -fx-border-color: black;" text="Ver Perfil">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="695.0" layoutY="478.0" prefHeight="43.0" prefWidth="108.0" style="-fx-background-color: white; -fx-border-color: black;" text="Sair">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+   </children>
 </AnchorPane>
